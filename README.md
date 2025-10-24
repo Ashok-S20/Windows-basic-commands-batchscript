@@ -23,43 +23,73 @@ Execute the necessary commands/batch file for the desired output.
 # WINDOWS COMMANDS:
 ## Exercise 1: Basic Directory and File Operations
 Create a directory named "my-folder"
-
 ## COMMAND AND OUTPUT
+```
+mkdir my-folder
+```
+![alt text](<img/Screenshot 2025-10-23 143211.png>)
 
 Remove the directory "my-folder"
-
 ## COMMAND AND OUTPUT
-
+```
+rmdir my-folder
+```
+![alt text](<img/Screenshot 2025-10-24 230436.png>)
 
 Create the file Rose.txt
-
 ## COMMAND AND OUTPUT
-
+```
+COPY CON Rose.txt
+dir Rose.txt
+```
+![alt text](<img/Screenshot 2025-10-24 231147.png>)
 
 Create the file hello.txt using echo and redirection
-
 ## COMMAND AND OUTPUT
+```
+echo “hello world” > hello.txt
+type hello.txt
+```
+![alt text](<img/Screenshot 2025-10-24 231400.png>)
 
 Copy the file hello.txt into the file hello1.txt
-
 ## COMMAND AND OUTPUT
+```
+copy hello.txt hello1.txt
+```
+![alt text](<img/Screenshot 2025-10-24 231912.png>)
+
 
 Remove the file hello1.txt
-
 ## COMMAND AND OUTPUT
+```
+del hello1.txt
+```
+![alt text](<img/Screenshot 2025-10-24 232112.png>)
+
 
 List out the file hello1.txt in the current directory
-
 ## COMMAND AND OUTPUT
+```
+dir hello1.txt
+```
+![alt text](<img/Screenshot 2025-10-24 232231.png>)
+
 
 List out all the associated file extensions 
-
 ## COMMAND AND OUTPUT
+```
+assoc | more
+```
+![alt text](<img/Screenshot 2025-10-24 232352.png>)
 
 
 Compare the file hello.txt and rose.txt
-
 ## COMMAND AND OUTPUT
+```
+fc hello.txt Rose.txt
+```
+![alt text](<img/Screenshot 2025-10-24 232822.png>)
 
 ## Exercise 2: Advanced Batch Scripting
 Create a batch file named on the desktop. The batch file need to have a variable assigned with a desired name for ex. name="John" and display as "Hello, John".
@@ -69,7 +99,7 @@ Create a batch file named on the desktop. The batch file need to have a variable
 
 
 ## OUTPUT
-
+![alt text](img/1bat.png)
 
 
 Create a batch file  on the desktop that checks whether a user-input number is odd or not. The script should:
@@ -83,7 +113,7 @@ Handle invalid inputs for the continuation prompt (Y/N) gracefully.
 
 
 ## OUTPUT
-
+![alt text](img/2.bat.png)
 
 
 
@@ -93,7 +123,7 @@ Write a batch file that uses a FOR loop to iterate over a sequence of numbers (1
 
 
 ## OUTPUT
-
+![alt text](img/3bat.png)
 
 
 
@@ -106,7 +136,7 @@ Use pause to keep the command window open after displaying the message.
 Expected Output (if the file exists):
 
 ## OUTPUT
-
+![alt text](img/4bat.png)
 
 Write a batch script that displays a simple menu with three options:
 Say Hello – Displays the message Hello, World!
@@ -116,7 +146,7 @@ The script should repeatedly display the menu until the user chooses to exit. Us
 
 
 ## OUTPUT
-
+![alt text](img/5bat.png)
 
 
 # RESULT:
